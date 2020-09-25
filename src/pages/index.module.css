@@ -38,6 +38,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+  position: relative;
 }
 
 .mobile img {
@@ -60,13 +62,13 @@
   height: 130px;
 }
 
-.background {
+.circle {
   position: fixed;
-  z-index: -10;
-  min-width: 100vw;
-  min-height: 100vh;
+  z-index: 0;
+  min-width: 20vw;
+  min-height: 20vw;
   top: 0;
-  left: 0;
+  left: -10vw;
 }
 
 .paragraph {
