@@ -64,7 +64,7 @@
 }
 
 .circle {
-  position: fixed;
+  position: absolute;
   z-index: 0;
 }
 
@@ -76,8 +76,15 @@
 }
 
 .circle:nth-child(2) {
-  top: 40vh;
+  top: 120vh;
   right: 10vw
+}
+
+@media screen and (min-width: 768px) {
+  .circle:nth-child(2) {
+    top: 40vh;
+    right: 10vw
+  }
 }
 
 .paragraph {
@@ -98,6 +105,8 @@
   justify-content: space-around;
   margin-bottom: 40px;
   max-width: 552px;
+  z-index: 10;
+  position: relative;
 }
 
 .markets img {
