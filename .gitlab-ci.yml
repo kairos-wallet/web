@@ -1,36 +1,28 @@
-stages:
-  - build
-  - deploy
-
-variables:
-  AWS_DEFAULT_REGION: eu-west-1 # The region of our S3 bucket
-  BUCKET_NAME: kairos-landing # Your bucket name
-
 cache:
   paths:
     - node_modules
 
-buildNext:
+pages:
   image: node:12-alpine
-  stage: build
   script:
     - npm install
     - npm run build
     - npm run export
+    - mv out public
   artifacts:
     paths:
-      - out/
+      - public
   only:
     - master
 
-deploys3:
-  image: "python:latest" # We use python because there is a well-working AWS Sdk
-  stage: deploy
-  dependencies:
-    - buildNext # We want to specify dependencies in an explicit way, to avoid confusion if there are different build jobs
-  before_script:
-    - pip install awscli # Install the SDK
-  script:
-    - aws s3 sync out s3://${BUCKET_NAME}/
-  only:
-    - master
+# deploys3:
+#   image: "python:latest" # We use python because there is a well-working AWS Sdk
+#   stage: deploy
+#   dependencies:
+#     - buildNext # We want to specify dependencies in an explicit way, to avoid confusion if there are different build jobs
+#   before_script:
+#     - pip install awscli # Install the SDK
+#   script:
+#     - aws s3 sync out s3://${BUCKET_NAME}/
+#   only:
+#     - master
