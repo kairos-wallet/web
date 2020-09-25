@@ -15,14 +15,14 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={styles.container}>
-        <img className={styles.circle} src="/circles/circle1.svg" alt="" />
-        <img className={styles.circle} src="/circles/circle2.svg" alt="" />
-        <img className={styles.cornerLogo} src="/logo.svg" alt="" />
+        <img className={styles.circle} src="circles/circle1.svg" alt="" />
+        <img className={styles.circle} src="circles/circle2.svg" alt="" />
+        <img className={styles.cornerLogo} src="logo.svg" alt="" />
         <div className={styles.mobile}>
-          <img src="/mobile-mockup.png" alt="mobile-with-kairos" />
+          <img src="mobile-mockup.png" alt="mobile-with-kairos" />
         </div>
         <main className={styles.main}>
-          <img className={styles.logo} src="/logo.svg" alt="Kairos Logo" />
+          <img className={styles.logo} src="logo.svg" alt="Kairos Logo" />
           <Title>Kairos Wallet</Title>
           <Paragraph className={styles.paragraph}>
           A DeFi non custodial Ethereum Blockchain wallet
@@ -35,8 +35,8 @@ export default function Index() {
           </Paragraph>
         </main>
         <div className={styles.markets}>
-          <img src="/App-Store-icon.png" alt="App Store" />
-          <img src="/Google-Play-icon.png" alt="Google Play" />
+          <img src="App-Store-icon.png" alt="App Store" />
+          <img src="Google-Play-icon.png" alt="Google Play" />
         </div>
         <div className={styles.spacer}/>
         <Footer className={styles.footer} />

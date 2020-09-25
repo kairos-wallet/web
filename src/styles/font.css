@@ -1,11 +1,11 @@
 @font-face {
   font-family: CeraBasic;
   font-weight: normal;
-  src: url("/cera-basic/Cerabasic-Regular.otf") format("opentype");
+  src: url("/acid-labs/kairos-wallet/web/cera-basic/Cerabasic-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: CeraBasic;
   font-weight: bold;
-  src: url("/cera-basic/Cerabasic-Bold.otf") format("opentype");
+  src: url("/acid-labs/kairos-wallet/web/cera-basic/Cerabasic-Bold.otf") format("opentype");
 }

@@ -14,7 +14,7 @@ export const Footer: FC<FooterProps> = ({ className }) => (
     <Paragraph className={styles.copyright}>© 2020 Kairos Wallet. Todos los derechos reservados</Paragraph>
     <div>
       <Paragraph className={styles.withLove}>With</Paragraph>
-      <img className={styles.heart} src="/heart-icon.svg" alt=""/>
+      <img className={styles.heart} src="heart-icon.svg" alt=""/>
       <Paragraph className={styles.withLove}>by Acid Tango</Paragraph>
     </div>
     <ul className={styles.links}>
