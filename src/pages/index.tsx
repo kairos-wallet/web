@@ -16,6 +16,7 @@ export default function Index() {
       </Head>
       <div className={styles.container}>
         <img className={styles.circle} src="/circles/circle1.svg" alt="" />
+        <img className={styles.circle} src="/circles/circle2.svg" alt="" />
         <img className={styles.cornerLogo} src="/logo.svg" alt="" />
         <div className={styles.mobile}>
           <img src="/mobile-mockup.png" alt="mobile-with-kairos" />

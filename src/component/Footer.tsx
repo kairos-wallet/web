@@ -11,7 +11,7 @@ type FooterProps = {
 
 export const Footer: FC<FooterProps> = ({ className }) => (
   <footer className={classNames(styles.footer, className)}>
-    <Paragraph className={styles.copyright}>© 2020 Kairos. Todos los derechos reservados</Paragraph>
+    <Paragraph className={styles.copyright}>© 2020 Kairos Wallet. Todos los derechos reservados</Paragraph>
     <div>
       <Paragraph className={styles.withLove}>With</Paragraph>
       <img className={styles.heart} src="/heart-icon.svg" alt=""/>

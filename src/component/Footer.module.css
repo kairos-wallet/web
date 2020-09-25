@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  margin-bottom: 100px;
 }
 
 .copyright {
@@ -33,7 +34,7 @@
 }
 
 .links a {
-  font-family: Metropolis, sans-serif;
+  font-family: CeraBasic, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 35px;

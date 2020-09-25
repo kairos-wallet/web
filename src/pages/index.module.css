@@ -40,6 +40,7 @@
   align-items: center;
   z-index: 10;
   position: relative;
+  transform: scale(0.70);
 }
 
 .mobile img {
@@ -65,10 +66,18 @@
 .circle {
   position: fixed;
   z-index: 0;
+}
+
+.circle:nth-child(1) {
   min-width: 20vw;
   min-height: 20vw;
   top: 0;
   left: -10vw;
+}
+
+.circle:nth-child(2) {
+  top: 40vh;
+  right: 10vw
 }
 
 .paragraph {

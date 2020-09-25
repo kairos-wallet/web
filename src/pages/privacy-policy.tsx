@@ -48,7 +48,6 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={styles.container}>
-        <DocumentHeader />
         <Document markdown={markdown} />
       </div>
     </>

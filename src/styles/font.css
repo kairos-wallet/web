@@ -1,20 +1,11 @@
 @font-face {
-  font-family: Metropolis;
+  font-family: CeraBasic;
   font-weight: normal;
-  src: url("/metropolis/Metropolis-Regular.otf") format("opentype");
-  /* src: url(/public/metropolis/Metropolis-Regular.otf); */
+  src: url("/cera-basic/Cerabasic-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: Metropolis;
-  font-weight: 600;
-  src: url("/metropolis/Metropolis-SemiBold.otf") format("opentype");
-  /* src: url(/public/metropolis/Metropolis-Regular.otf); */
-}
-
-@font-face {
-  font-family: Metropolis;
+  font-family: CeraBasic;
   font-weight: bold;
-  src: url("/metropolis/Metropolis-Bold.otf") format("opentype");
-  /* src: url(/public/metropolis/Metropolis-Regular.otf); */
+  src: url("/cera-basic/Cerabasic-Bold.otf") format("opentype");
 }
