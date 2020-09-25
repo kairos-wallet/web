@@ -8,6 +8,7 @@ pages:
     - npm install
     - npm run build
     - npm run export
+    - mv public public_
     - mv out public
   artifacts:
     paths:
