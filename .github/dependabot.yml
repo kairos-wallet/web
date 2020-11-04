@@ -1,0 +1,15 @@
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: "weekly"
+      day: "tuesday"
+  # Maintain dependencies for npm
+  - package-ecosystem: npm
+    open-pull-requests-limit: 20
+    directory: '/'
+    schedule:
+      interval: "weekly"
+      day: "tuesday"
