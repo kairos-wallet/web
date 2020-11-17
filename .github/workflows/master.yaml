@@ -17,6 +17,8 @@ jobs:
         run: npm run build
       - name: Export
         run: npm run export
+      - name: Fix .nojekyll
+        run: touch out/.nojekyll
       - name: Install deploy dependencies
         run: apk add git rsync
       - name: Deploy
