@@ -1,0 +1,29 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tests:
+    name: Lint & Test
+    runs-on: ubuntu-latest
+    container: node:lts-alpine
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Export
+        run: npm run export
+      - name: Install deploy dependencies
+        run: apk add git rsync
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: out
+          CLEAN: true
+          SINGLE_COMMIT: true
