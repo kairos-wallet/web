@@ -1,4 +1,5 @@
 name: CI
+
 on: pull_request
 
 jobs:
@@ -13,3 +14,12 @@ jobs:
         run: npm run build
       - name: Export
         run: npm run export
+      # https://securitylab.github.com/research/github-actions-preventing-pwn-requests
+      - name: Save PR number
+        run: |
+          mkdir -p ./pr
+          echo ${{ github.event.number }} > ./pr/NR
+      - uses: actions/upload-artifact@v2
+        with:
+          name: pr
+          path: pr/
