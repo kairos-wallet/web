@@ -23,7 +23,7 @@
     "react-markdown": "8.0.7"
   },
   "devDependencies": {
-    "@types/node": "20.11.0",
+    "@types/node": "20.11.1",
     "@types/react": "17.0.74",
     "classnames": "2.5.1",
     "prettier": "3.2.2",
