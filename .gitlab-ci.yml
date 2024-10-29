@@ -3,7 +3,7 @@ cache:
     - node_modules
 
 pages:
-  image: node:21-alpine
+  image: node:22-alpine
   script:
     - npm install
     - npm run build
