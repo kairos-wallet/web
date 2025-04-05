@@ -27,6 +27,6 @@
     "@types/react": "17.0.85",
     "classnames": "2.5.1",
     "prettier": "3.5.3",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   }
 }
