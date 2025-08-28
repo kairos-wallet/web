@@ -18,13 +18,13 @@
   },
   "dependencies": {
     "next": "13.5.10",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
     "react-markdown": "8.0.7"
   },
   "devDependencies": {
     "@types/node": "22.18.0",
-    "@types/react": "17.0.88",
+    "@types/react": "19.1.12",
     "classnames": "2.5.1",
     "prettier": "3.6.2",
     "typescript": "5.9.2"
